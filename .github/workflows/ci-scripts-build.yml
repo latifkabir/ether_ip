@@ -43,18 +43,6 @@ jobs:
         include:
           - os: ubuntu-24.04
             cmp: gcc
-            configuration: default
-            wine: "64"
-            name: "Ub-24 gcc + MinGW"
-
-          - os: ubuntu-24.04
-            cmp: gcc
-            configuration: static
-            wine: "64"
-            name: "Ub-24 gcc + MinGW, static"
-
-          - os: ubuntu-24.04
-            cmp: gcc
             configuration: static
             extra: "CMD_CXXFLAGS=-std=c++11"
             name: "Ub-24 gcc C++11, static"
@@ -82,26 +70,6 @@ jobs:
             cmp: clang
             configuration: default
             name: "MacOS clang"
-
-          - os: windows-2022
-            cmp: gcc
-            configuration: default
-            name: "Win2022 MinGW"
-
-          - os: windows-2022
-            cmp: gcc
-            configuration: static
-            name: "Win2022 MinGW, static"
-
-          - os: windows-2022
-            cmp: vs2022
-            configuration: default
-            name: "Win2022 MSC-22"
-
-          - os: windows-2022
-            cmp: vs2022
-            configuration: static
-            name: "Win2022 MSC-22, static"
 
           - os: ubuntu-latest
             cmp: gcc
