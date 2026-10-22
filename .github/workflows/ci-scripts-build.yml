@@ -35,8 +35,8 @@ jobs:
           - os: ubuntu-24.04
             cmp: gcc
             configuration: default
-            base: "3.15"
-            name: "3.15 Ub-24 gcc"
+            base: "3.16.1"
+            name: "3.16.1 Ub-24 gcc"
 
           - os: ubuntu-24.04
             cmp: gcc
@@ -47,20 +47,20 @@ jobs:
           - os: ubuntu-24.04
             cmp: gcc
             configuration: static
-            base: "3.15"
-            name: "3.15 Ub-24 gcc static"
+            base: "3.16.1"
+            name: "3.16.1 Ub-24 gcc static"
 
           - os: ubuntu-24.04
             cmp: gcc
             configuration: debug
-            base: "3.15"
-            name: "3.15 Ub-24 gcc debug"
+            base: "3.16.1"
+            name: "3.16.1 Ub-24 gcc debug"
 
           - os: ubuntu-24.04
             cmp: clang
             configuration: default
-            base: "3.15"
-            name: "3.15 Ub-24 clang"
+            base: "3.16.1"
+            name: "3.16.1 Ub-24 clang"
 
     steps:
     - uses: actions/checkout@v7
